@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    background: #d2ae6d;
+}
+
+
+#btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff ;
+
+}
+
+.logo {
+    position: relative;
+    top: 30px;
+    left: 30px;
+ 
+     
+ }
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: -60px;
+    left: -30px;
+    
+
+}
+
+.menu li {
+    border-right: #d2ae6d;
+    border: 1px solid #fff;
+
+}
+
+
+.menu li:hover {
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgb(237, 232, 66);
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+body {
+    background-color: #d2ae6d;
+}
+
+
+.contenedor-articulos {
+    display: flex;
+    flex-direction: wrap ;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.article-uno {
+
+    width: 300px
+}
+
+.titulo-articulo {
+    display: flex;
+    
+    justify-content: center;
+}
+
+.contenedor-footer {
+    display: flex;
+    flex-direction: wrap ;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.ul-iconos-redes {
+    list-style-type:none ;
+    display: flex; 
+    justify-content: center;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: wrap ;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.texto-formulario {
+    display: flex;
+    justify-content: center;
+}
+.cuadro-nombre {
+    display: flex;
+    justify-content: center;
+}
+
+.animacion {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(106, 240, 57);
+    animation-name: movimiento-uno;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-delay: 0.1;
+}
+
+ 
+
+
+
+
+@media screen and (max-width:768px){
+
+    header label {
+        display: block;
+        
+    }
+
+    .menu {
+        position: absolute;
+        background:#d2ae6d ;
+        width: 40%;
+        margin-left: -40%;
+        transition: all 0.5s;
+        transition-delay: .1;
+        
+        
+        
+    }
+
+    .menu ul {
+        flex-direction: column;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        
+    }
+
+    .menu li { 
+        border-top: 1px solid #fff; 
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+
+    .logo{
+        display: block;
+        margin: 0px auto;
+        left: 0px;
+        top: 30px;
+       }
+
+
+
+
+
+
+}
+
+
+@keyframes movimiento-uno {
+
+    0% {
+        width: 100px;
+        background-color: aqua;
+    }
+    25% {
+        width: 50px;
+     background-color: blue;
+    }
+    100% {
+        width: 100px;
+        background-color: brown;
+        transform: translateX(20px);
+    }
+
