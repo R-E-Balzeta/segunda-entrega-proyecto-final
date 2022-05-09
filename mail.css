@@ -126,16 +126,6 @@ body {
     justify-content: center;
 }
 
-.animacion {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(106, 240, 57);
-    animation-name: movimiento-uno;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-duration: 3s;
-    animation-delay: 0.1;
-}
 
  
 
